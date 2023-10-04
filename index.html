@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <style>
+      [popover] {
+        inset: unset;
+        bottom: anchor(top);
+        left: anchor(center);
+        translate: -50%;
+      }
+    </style>
+<title>Warren Johnson Portofolio</title>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="navbar_links">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+          </ul>
+      </div>
+      <a href="#" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+  </nav>
+          <section id="home">
+            <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Warren Johnson</h1>
+              <p class="section__text__p2">Junior Software Developer</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/CV.pdf')"
+                >
+                  Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Me
+                </button>
+              </div>
+              <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/warren-johnson-b3336b230/'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/robotdog77'"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section id="about">
+            <p class="about_section_text">Get To Know More</p>
+            <h1 class="about_title">About Me</h1>
+              <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <h3>Experience</h3>
+                    <p>12 Weeks <br />Software Development <br> JustIT</BR></p>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    Hi my name is Warren and I started my journey to become a junior software developer in 2022.
+                    My journey had me dabble in Cyber Security before introducing me to coding.
+                    In 2023 my programming journey truly took off as I joined software development bootcamp with Just IT and learned how to create my own website, 
+                    develop my own programmes with Javascript, HTML:5 & CSS and my own databases in Python and  SQL.
+                  </p>
+                </div>
+                <div class="about-skills-container">
+                  <h3>Skills</h3>
+                  <img src="./assets/All Logo.png" alt="" height="90px">
+                  <img src="./assets/sql.png" alt="" height="90px">
+                  <img src="./assets/python_vertical_logo_icon_168039.png" alt="" height="90px">
+                </div>
+          </section>
+          <section id="projects">
+            <p class="project_section__text__p1">Browse My Recent</p>
+            <h1 class="project_title">Projects</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Music Player.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Music Player</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/robotdog77/Music-player'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/Film Flix.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Film Flix</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://replit.com/@WarrenJohnson1/filmApp#main.py'"
+                    >
+                      Replit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact">
+            <p class="contact_section__text__p1">Get in Touch</p>
+            <h1 class="contact_title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img 
+                  src="./assets/email_logo.png"
+                  alt="Email icon"
+                  class="email-icon"
+                  />
+              </div>
+              <div class="contact-info-container">
+                <img 
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="contact-icons"
+                  onclick="location.href='https://www.linkedin.com/in/warren-johnson-b3336b230/'"
+                />
+              </div>
+              <div class="contact-info-container">
+                <img 
+                  src="./assets/github.png"
+                  alt="Github icon"
+                  class="contact-icons"
+                  onclick="location.href='https://github.com/robotdog77'"
+                />
+              </div>
+            </div>
+            <div class="popup_container">
+              <div class="popup" id="popup">
+              <h1>Contact</h1>
+              <input type="email" name="first" placeholder="Email Adress" autocomplete="off" required>
+              <textarea  rows="5" cols="60" name="message" placeholder="Enter message" autocomplete="off" required></textarea>
+              <button type="submit"> Send Message</button>
+              </div>
+            </div>
+          </section>
+
+  <!-- <Section id="Projects">
+      <div class="Project-Container"></div>
+      <div class="Project_box"></div>
+    <span></span>
+      <div class="project_content">
+        <h2>Music App</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ipsa libero ipsum quae explicabo corrupti, dolores numquam perspiciatis at aliquam velit possimus suscipit blanditiis, 
+          ad corporis! Placeat dolorum ipsa iste delectus.</p>
+          <a href="#">Read More</a>
+      </div>
+      <div class="Project_box"></div>
+      <span></span>
+        <div class="project_content">
+          <h2>Film Flix</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsa libero ipsum quae explicabo corrupti, dolores numquam perspiciatis at aliquam velit possimus suscipit blanditiis, 
+            ad corporis! Placeat dolorum ipsa iste delectus.</p>
+            <a href="#">Read More</a>
+        </div>
+  </Section> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
